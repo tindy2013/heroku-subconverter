@@ -1,0 +1,8 @@
+{
+  "name": "SubConverter",
+  "description": "Run SubConverter on Heroku.",
+  "keywords": ["subconverter"],
+  "website": "https://github.com/tindy2013/heroku-subconverter",
+  "repository": "https://github.com/tindy2013/heroku-subconverter",
+  "stack": "container"
+}

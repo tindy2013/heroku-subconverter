@@ -3,6 +3,20 @@
   "description": "Run SubConverter on Heroku.",
   "keywords": ["subconverter"],
   "website": "https://github.com/tindy2013/heroku-subconverter",
-  "repository": "https://github.com/tindy2013/heroku-subconverter",
-  "stack": "container"
+  "repository": "https://github.com/tindy2013/subconverter",
+  "stack": "container",
+  "env": {
+    "API_MODE": {
+      "description": "Whether to enable API mode. This field should always be set to true if you want to specify other settings here.",
+      "value": "true"
+    },
+    "API_TOKEN": {
+      "description": "The access token for accessing local files and modifying settings.",
+      "generator": "secret"
+    },
+    "MANAGED_PREFIX": {
+      "description": "Address prefix used for generating RULE-SET and provider URLs. On Heroku this field should be \"https://{App name}.herokuapp.com\" (Replace \"{App name}\" with the one you set above).",
+      "value": ""
+    }
+  }
 }
